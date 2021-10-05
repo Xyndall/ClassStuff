@@ -13,11 +13,6 @@ public class CharacterController : MonoBehaviour
     
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -27,8 +22,12 @@ public class CharacterController : MonoBehaviour
 
         Vector3 move = transform.right * x + transform.forward * z;
 
-        controller.Move(move * speed * Time.deltaTime);
+        gameObject.transform.position += move * Time.deltaTime;
 
-        controller.Move(velocity * Time.deltaTime);
+        
+
+        //controller.Move(move * speed * Time.deltaTime);
+
+        //controller.Move(velocity * Time.deltaTime);
     }
 }
