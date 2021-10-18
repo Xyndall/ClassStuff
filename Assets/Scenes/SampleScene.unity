@@ -1674,8 +1674,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd8da60eb4a75c949aa675ee2a54d104, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 200
-  playerBody: {fileID: 2014560169}
+  axes: 0
+  sensitivityX: 15
+  sensitivityY: 15
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+  frameCounter: 20
 --- !u!1 &988516750
 GameObject:
   m_ObjectHideFlags: 0
